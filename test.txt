@@ -9,3 +9,10 @@
   522  git push -u origin master
 
 '''
+
+process to add modifed local files to remote github
+add all; commit; push to master branch
+584  git add --a
+  585  git commit -m 'initial commit'
+  586  git status
+  587  git push origin master
