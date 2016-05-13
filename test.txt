@@ -1,0 +1,11 @@
+
+'''
+516  git config --list
+  517  cd rdm750*
+  518  pwd
+  519  echo 'Hello World' > index.html
+  520  git add --all
+  521  git commit -m 'initial commit'
+  522  git push -u origin master
+
+'''
