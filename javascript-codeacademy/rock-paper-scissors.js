@@ -41,5 +41,6 @@ return "paper wins";
 
 };
 
-compare(userChoice,computerChoice);
+var comp  = compare(userChoice,computerChoice);
+console.log(comp);
     
