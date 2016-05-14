@@ -3,7 +3,7 @@ $(document).ready(
 //var userChoice = $('prompt(""input[name=message]")'.val();
 //}
 var userChoice=prompt();
-var test = document.getElementbyId('output'); 
+var test = document.getElementbyId('output').innerHTML; 
 test.innerHTML=userChoice;
 
 var computerChoice = Math.random();
