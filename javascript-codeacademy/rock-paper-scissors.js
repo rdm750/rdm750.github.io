@@ -2,7 +2,7 @@ $(document).ready(
 //$('button').click(function(){
 //var userChoice = $('prompt(""input[name=message]")'.val();
 //}
-var userChoice=prompt();
+userChoice=prompt();
 var test = document.getElementbyId('text').innerHTML; 
 test.innerHTML=userChoice;
 
