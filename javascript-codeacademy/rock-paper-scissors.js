@@ -1,4 +1,8 @@
-var userChoice = prompt("Do you choose rock, paper or scissors?");
+$(document).ready(
+$('button').click(function(){
+var userChoice = $('prompt(""input[name=message]")'.val();
+}
+
 var computerChoice = Math.random();
 if (computerChoice < 0.34) {
 	computerChoice = "rock";
@@ -43,4 +47,4 @@ return "paper wins";
 
 var comp  = compare(userChoice,computerChoice);
 console.log(comp);
-    
+);    
