@@ -1,7 +1,10 @@
 $(document).ready(
-$('button').click(function(){
-var userChoice = $('prompt(""input[name=message]")'.val();
-}
+//$('button').click(function(){
+//var userChoice = $('prompt(""input[name=message]")'.val();
+//}
+var userChoice=prompt();
+var test = document.getElementbyId('output'); 
+test.innerHTML=userChoice;
 
 var computerChoice = Math.random();
 if (computerChoice < 0.34) {
@@ -11,6 +14,7 @@ if (computerChoice < 0.34) {
 } else {
 	computerChoice = "scissors";
 } console.log("Computer: " + computerChoice);
+test.innerHTML="Computer: " + computerChoice";
 
 
 var compare = function(choice1, choice2) {
@@ -47,4 +51,5 @@ return "paper wins";
 
 var comp  = compare(userChoice,computerChoice);
 console.log(comp);
+test.innerHTML=comp;
 );    
