@@ -1,11 +1,5 @@
-$(document).ready(function(){
-   
-        $('<body></body>').append('<div class="div">' + '</div>');
-$('<body></body>').append('<ul class="item">' + '</ul>');       
-for(var i=0;i<=10;i++)
-{
-       $('<body></body>').append('<li class="div">' + i  + '</li>');
-        
- }       
-    
-    });
+var $newdiv1 = $( "<div id='object1'/>" ),
+  newdiv2 = document.createElement( "div" ),
+  existingdiv1 = document.getElementById( "foo" );
+ 
+$( "body" ).append( $newdiv1, [ newdiv2, existingdiv1 ] ); 
