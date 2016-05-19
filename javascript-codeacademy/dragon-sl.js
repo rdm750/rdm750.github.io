@@ -8,10 +8,12 @@ while(slaying)
     if(youHit)
     {
     console.log("hit a dragon");
+    document.write("<h1>hit a dragon<h1>");
     totalDamage += damageThisRound;
         if(totalDamage>=4)
         { 
             console.log("the player slew the dragon");
+            document.write("<h1>hit a dragon<h1>");
             slaying =false;
         }
         else
@@ -19,7 +21,7 @@ while(slaying)
     }
     else
     console.log("dragon defeated you");
-    
+    document.write("<p>dragon defeated you</p>");    
     
     slaying = false;
     }
