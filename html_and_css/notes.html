@@ -1,0 +1,257 @@
+<!Doctype html>
+<html>
+
+<head>
+<title>HTML & CSS Notes</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<script type="text/javascript">
+<table>
+
+for(var i=0;i<100;i++){
+
+document.write("<tr>"+i+"</tr>");
+
+}
+</script>
+</table>
+<div>
+<!DOCTYPE html>
+<html>
+Heading
+<head> <\head>
+Title
+<title>
+<body> </body>
+heading inside body
+<h1>  </h1>  h1 to h6 size of heading in body section
+paragraph
+<p> </p> paragraph
+Link
+ <a href="www.google.com">Fav site</a>      Fav site = title with link to google.com
+Image
+<img src="https://s3.amazonaws.com/codecademy-blog/assets/f3a16fb6.jpg" />
+images
+<a href =www.codeacademy.com ><img src="https://s3.amazonaws.com/codecademy-blog/assets/f3a16fb6.jpg" /></a>
+
+Lists Ordered and unordered (bullet points)
+<ol>    Ordered lists generates bullet points with numbers 1. 2. 3.
+      <li>   </li>
+<ul>   unordered lists generates only bullet points like on resume
+      <li>   </li>
+Comment
+<!-- Make me into a comment. -->
+Style Font size 
+<p style="font-size: 40px">    The font-size unit em is a relativemeasure:   40em
+Style Color
+<h1 style="color: green; font-size:16px"></h1>
+Style font-family
+<li style="font-family: Arial;font-size: 16px">
+Style background color
+<body style="background-color: brown">
+Style text alignment 
+style="text-align:center"
+Bold tags
+<strong> </strong>
+italicize emphasize <em>
+<p>Hey, don't say <em>that</em>!</p>
+
+table 
+<table>  and <tr> table rows; <thead>;<tbody> and <th>  table header,body and row after <table> header
+<table>
+<thead>
+	    <th colspan="3">Test</th>
+	</thead>
+
+<table border="1px">
+ <thead>
+            <tr>
+                <th style="color:red" colspan="2"><em>Famous Monsters by Birth Year</em></th>
+                <th>Birth Year</th>
+            </tr>    
+            </thead>
+            <tbody>
+            <tr>
+                <td>King Kong</td>
+                <td>1933</td>  
+            </tr>
+                <td>Two</td>
+            <tr>
+                <td>Three</td>
+            </tr>
+            
+            <tr>
+                
+            </tr>
+        </table>
+
+<div> division tags 
+<div></div> tag. Short for "division," <div> allows you to divide your page into containers (that is, different pieces). 
+<div style="background-color:yellow;width:100px;height:100px"></div>	
+
+<span> tags
+<p> this is <span style= "color:red>red <span></p>
+
+
+Divide up your webpage for easy styling with <div> tags
+Select pieces of text and change their properties using <span> tags
+CSS
+changel style properties in CSS file and link it under <head> tag in html
+<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+
+selector
+and properties in brackets
+selector {
+    property: value;
+}
+A selector can be any HTML element, such as <p>, <img>, or <table>. You just take off the <>s! To make a paragraph's text red with CSS, you'd type:
+
+p {
+    color: red;
+}
+A property is an aspect of a selector. For instance, you can change the font-family, color, and font-size of the text on your web pages (in addition to many more). end property with semicolon
+
+paragraph p without the <>
+
+add commas if browser doesnt have 
+
+p{
+
+ color:green;    
+
+ font-family:Vivaldi,Verdana,Garamond;
+
+ font-size:24px;
+
+text-decoration: none;
+
+border: 2px solid red;
+
+}
+
+a{
+
+  color:#cc0000;
+
+  text-decoration: none;
+
+}
+
+nested <div <div <div <h3 properties set in css
+
+div div div h3{
+
+ color:red;   
+
+    
+
+}
+
+universal selector (applies to all tags)
+
+*{
+
+    
+
+ border:1px dashed #3A5FCD;   
+
+}
+
+class (set style class in tags) and id (set id styles for specific style applications)
+
+CSS: class identify with dot .    and id identify with # 
+
+<p class="fancy"> test </p>
+
+CSS  ->   .fancy{ color:red; }
+
+IDs are identified in CSS with a pound sign (#):
+
+<p id="fancy"> test </p> 
+
+CSS  ->   #fancy{ color:red; }
+
+psuedo-class selector hover mouse a tag links change color.
+
+a:hover {
+
+	color: #cc0000;
+
+	font-weight: bold;
+
+	text-decoration: none;
+
+}
+
+a:link: An unvisited link.
+a:visited: A visited link.
+a:hover: A link you're hovering your mouse over.
+
+set first paragraph tag (child) properties
+
+p:first-child {
+
+    font-family:cursive;
+
+}
+
+set nth  paragraph tag (nth child) properties
+
+p:nth-child(3) {
+
+    color:#CC0000;
+
+}
+
+div button display:inline-block; navigation at top
+
+margin->border->padding->content
+
+div {
+
+	border: 1px solid black;
+
+	background-color: #CC0000;
+
+	margin-top:10px; /*some value*/
+
+margin-right:5px; /*some value*/
+
+margin-bottom:5px; /*some value*/
+
+margin-left:50px; /*some-value*/
+
+padding-top:0px; /*some value*/
+
+padding-right:30px; /*some value*/
+
+padding-bottom:0px;/*some value*/
+
+padding-left:10px; /*some-value*/
+
+}
+
+Positioning  position:fixed; (scroll fixed)
+float:left;
+
+clear:both;
+
+	position:absolute;
+	margin-left:20px;
+	position:relative;
+	margin-left:200px;
+float:left;
+	width:45%;
+
+--
+Make ordered and unordered lists
+Change the color, size and type of font
+Add comments to our HTML file
+Change the page's background color
+Align text
+Bold and italicize text
+-----
+</div>
+</body>
