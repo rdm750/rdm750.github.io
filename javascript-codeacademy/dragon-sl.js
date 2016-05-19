@@ -13,7 +13,7 @@ while(slaying)
         if(totalDamage>=4)
         { 
             console.log("the player slew the dragon");
-            document.write("<h1>hit a dragon<h1>");
+            document.write("<h1>the player slew the dragon<h1>");
             slaying =false;
         }
         else
