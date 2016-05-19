@@ -1,4 +1,4 @@
-var $newdiv1 = $( "<div id='object1'/>" );
+var $newdiv1 = $( "<div id='name'/>" );
   newdiv2 = document.createElement( "div" );
   existingdiv1 = document.getElementById( "left" );
  
