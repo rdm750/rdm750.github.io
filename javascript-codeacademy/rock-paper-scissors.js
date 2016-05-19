@@ -1,4 +1,4 @@
-$(document).ready(
+//$(document).ready(
 //$('button').click(function(){
 //var userChoice = $('prompt(""input[name=message]")'.val();
 //}
