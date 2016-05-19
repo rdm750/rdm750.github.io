@@ -1,4 +1,4 @@
-var newdiv1 = "<div id='div'/>";
-  var newdiv2 = document.createElement( "div" );
-  existingdiv1 = document.body.children[0];
- existingdiv1.append(newdiv1); 
+var div  = document.body.children[0]
+ var span = document.createElement('span')
+  span.innerHTML = 'A new span!'
+  div.appendChild(span)
