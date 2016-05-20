@@ -21,7 +21,21 @@
             public function greet(){
              return "Hello, my name is ".$this->firstname." " .$this->lastname.". Nice to meet you! :-)";   
             }
-        }
+        
+}
+      class Person1{
+       
+       public static function say(){ echo "Here are my thoughts!";}   
+      }
+      
+      class Blogger extends Person1{
+          const cats = 50;
+          
+      }
+      
+      Person1::say();
+      echo Blogger::cats;
+      
         $teacher = new Person("boring", "12345", 12345);
         $student = new Person("bortestng", "145", 123);
         echo $student->age;
