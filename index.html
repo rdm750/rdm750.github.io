@@ -19,7 +19,6 @@ var div  = document.body.children[0]
   div.appendChild(span)
 
 var canvas = document.getElementById("canvas");
- if (null==canvas || !canvas.getContext) return;
 
  var axes={}, ctx=canvas.getContext("2d");
  axes.x0 = .5 + .5*canvas.width;  // x0 pixels from left to x=0
