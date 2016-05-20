@@ -16,12 +16,27 @@ var div  = document.body.children[0]
   span.innerHTML = ''
   div.appendChild(span)
 
+var canvas = document.getElementById("canvas");
+ if (null==canvas || !canvas.getContext) return;
+
+ var axes={}, ctx=canvas.getContext("2d");
+ axes.x0 = .5 + .5*canvas.width;  // x0 pixels from left to x=0
+ axes.y0 = .5 + .5*canvas.height; // y0 pixels from top to y=0
+ axes.scale = 40;                 // 40 pixels from x=0 to x=1
+ axes.doNegativeX = true;
+
+ showAxes(ctx,axes);
+
+
 document.write("<table><tr><th>ID</th><th>Data</th></tr>")
 for(var i=0;i<100;i++){
 document.write("<tr><td>"+i+"</td><td>"+Math.pow(i,2)+"</td></tr>")
+funGraph(ctx,axes,Math.pow(i,2),"rgb(11,153,11)",1);
 }
 document.write("</table")
-</script>
 
+</script>
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+</canvas>
 </body>
 </html>
