@@ -16,8 +16,8 @@ ABCD3      0      1     9     858       0       0       0       5       0       
 .
 extracts ABCD01 41, ABCD1 43  from above lines...
 regexpattern:r'(ABCD\d{1,2})(:?\s+\d+){9}(\s+\d{1,2})'     
-
 tested at http://pythex.org/
+www.regexpal.com
 
 '''
 
@@ -33,6 +33,7 @@ for (dirname, dirs, files) in os.walk(dr1):
 		test1.write(fil+'\n')
 		for linerd in fileop:
 			regexpat=r'(VPPA\d{1,2})(:?\s+\d+){9}(\s+\d{1,2})'
+			#regexpat=r'(\w+)(:?\s+\d+)+(\s+\d{1,2})'
 			match = re.findall(regexpat,linerd)
 			for mat in match:
 				print mat
