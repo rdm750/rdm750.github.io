@@ -15,6 +15,7 @@ def uniq_substring(test):
 	lista=[]
 	[lista.append(test[i:i+k+1]) for i in range(len(test)) for k in range(len(test)-i) if test[i:i+k+1] not in lista and test[i:i+k+1][::-1] not in lista]
 	print lista
+	print "Numer of Uniq Substrings: "+str(len(lista))
 
 uniq_substring('rohit')
 uniq_substring('abab')
