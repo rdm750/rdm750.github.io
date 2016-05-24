@@ -1,5 +1,6 @@
 def dial_pad(num):	
 	dialpad ={}
+        dialpad['0']=''
 	dialpad['1']='ABC' 
 	dialpad['2']='DEF'
 	dialpad['3']='GHI'
@@ -21,4 +22,4 @@ def dial_pad(num):
 
 dial_pad('789#66#63234')
 dial_pad('22#22')
-
+dial_pad('180024582266')
