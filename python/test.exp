@@ -1,0 +1,17 @@
+#!/usr/bin/expect
+
+set timeout 1
+set cmd {uname -a}
+
+spawn ssh root@$argv
+expect_after eof { exit 0 }
+
+
+## interact with SSH
+expect "yes/no" { send "yes\r" }
+expect "password:" { send "rootpasswd\r" }
+
+expect "# "
+send "ls -ltr\r"
+expect "(.*)\r"
+send "exit\r
