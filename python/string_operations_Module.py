@@ -56,9 +56,35 @@ def median(lst):
     return median
 #-------
 
+'''Enter your code here. Read input from STDIN. Print output to STDOUT 
+checks for alternating characters and prints required deletions
+ABABA  no deletions
+5
+AAAA    3 deletions
+BBBBB   4 deletions
+ABABABAB 0 deletions
+BABABA 0 deletions
+AAABBB 4 deletions
+
+'''	
+#for i in range(int(input()):
+#word=str(raw_input())
+
+def del_Alter_str(test_word):
+    word=str(test_word)
+    k=0 
+    for c in range(len(word)):
+    	if c>0:
+    		if word[c] == word[c-1]:
+    			k+=1
+    return k
+
+#----------
+
+
 if __name__ ==' __main__':
 	reverse(test)
 	anti_vowel(test)
 	remove_duplicates(list_int)
 	median(lst)	
-
+        del_Alter_str(n,test)

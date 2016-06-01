@@ -12,7 +12,7 @@ print string_operations_Module.median([x for x in range(100)][2:50:4]),'\n'
 print string_operations_Module.remove_duplicates([3,11,22,1,22,2,3,33,4,77]),'\n'
 print int_operations_Module.max([3,11,22,1,22,2,3,33,4,77])
 print int_operations_Module.remov_dupl([3,11,22,1,22,2,3,33,4,77])
-
+print string_operations_Module.del_Alter_str('AAABBB')
 
 
 
