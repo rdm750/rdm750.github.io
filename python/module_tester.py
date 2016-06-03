@@ -18,7 +18,7 @@ for i in xrange(25):
 print '\n'
 for i in xrange(1,11):
         print int_operations_Module.fib(i,0,1),',',
-
+int_operations_Module.pascal(10)
 
 
 
