@@ -15,6 +15,9 @@ print int_operations_Module.remov_dupl([3,11,22,1,22,2,3,33,4,77])
 print string_operations_Module.del_Alter_str('AAABBB')
 for i in xrange(25):
 	print int_operations_Module.fibonacci(i),',',
+print '\n'
+for i in xrange(1,11):
+        print int_operations_Module.fib(i,0,1),',',
 
 
 

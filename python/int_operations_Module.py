@@ -21,6 +21,15 @@ def fibonacci(n):
 		
 	return fibonacci(n-2) + fibonacci(n-1)
 
+#Fibonacci Modified
+
+def fib(n,a,b):
+    if n ==1:
+        return a
+    elif n==2:
+        return b
+    return (fib(n-1,a,b))**2 + fib(n-2,a,b)
+
 if __name__ == '__main__':
 	max(lstnum)
         remov_dupl(lstnum)
