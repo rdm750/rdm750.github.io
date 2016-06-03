@@ -13,7 +13,8 @@ print string_operations_Module.remove_duplicates([3,11,22,1,22,2,3,33,4,77]),'\n
 print int_operations_Module.max([3,11,22,1,22,2,3,33,4,77])
 print int_operations_Module.remov_dupl([3,11,22,1,22,2,3,33,4,77])
 print string_operations_Module.del_Alter_str('AAABBB')
-
+for i in xrange(25):
+	print int_operations_Module.fibonacci(i),',',
 
 
 
