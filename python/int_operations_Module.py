@@ -3,7 +3,7 @@ int operations module
 max,remove duplicates,factorial,combinations,
 fibonacci,pascal triangle,binary search sorted array,
 return integer pairs matching a difference from an array
-
+quicksort(lomato partition scheme implement)
 rohit malgaonkar
 
 '''
@@ -69,7 +69,7 @@ def search(arr,key,mind,maxd):
 		else:
 			return index
 #recursion quicksort partition
-def partition(ar):
+def pivot_start_partition(ar):
     if len(ar)>1:
         p=ar[0]
         eq,left,right=[],[],[]
@@ -80,13 +80,40 @@ def partition(ar):
                 left.append(i)   
             else:
                 eq.append(i)
-        listn=partition(left)+partition(eq)+partition(right)
+        listn=pivot_start_partition(left)+pivot_start_partition(eq)+pivot_start_partition(right)
         for t in listn: 
             print t,
         print ''  
         return listn
     else:
         return ar
+# implemented https://en.wikipedia.org/wiki/Quicksort
+#Lomuto_partition_scheme
+def quicksort(ar,lo,hi):
+    if lo < hi: 
+        p= partition(ar,lo,hi)
+        print ' '.join(map(str,ar))
+        quicksort(ar, lo, p-1)
+        quicksort(ar, p + 1, hi)
+        
+    else:
+        return
+
+def partition(A,lo,hi):
+    pivot = A[hi]
+    i = lo        # place for swapping
+    for j in xrange(lo,hi):
+        if A[j] <= pivot:
+            x=A[i]
+            A[i]=A[j]
+            A[j]=x
+            i+=1
+    x=A[i]
+    A[i]=A[hi]
+    A[hi]=x
+    left,right=[],[]
+
+    return i
 
 def pairs(a,k):
     #a contains array of numbers and k is the value of difference
@@ -112,5 +139,6 @@ if __name__ == '__main__':
 	comb(n,r)
 	pascal(r)
         search(arr,key,min,max)
-        partition(ar)
+        pivot_start_partition(ar)
 	pairs(a,k)
+	quicksort(ar,lo,hi)
