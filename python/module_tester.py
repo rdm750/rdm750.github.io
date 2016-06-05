@@ -28,4 +28,4 @@ print int_operations_Module.search(test,22,0,t)
 int_operations_Module.pivot_start_partition(test2)
 print '\n',int_operations_Module.pairs(test2,2)
 int_operations_Module.quicksort(test2,0,len(test2)-1)
-
+string_operations_Module.pangram('AAABBB My name is Rohit Malgaonkar')

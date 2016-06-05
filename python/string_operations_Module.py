@@ -1,7 +1,8 @@
 '''
 string operations reverse,anti vowel,remove dpulicates
-median of a list,
+median of a list,pangram,
 
+Hackerrank.com
 written in CodeAcademy class
 Rohit Malgaonkar
 '''
@@ -80,7 +81,21 @@ def del_Alter_str(test_word):
     return k
 
 #----------
-
+def pangram(line):
+	count=0
+	lista=[]
+	test='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+	for A in line:
+	    if A.lower() in test and A.lower() not in lista:
+	        count+=1
+	        lista.append(A.lower())
+	    else:
+	        pass#print '#'
+	
+	if count==26:
+	    print 'pangram'
+	else:
+	    print 'not pangram'
 
 if __name__ ==' __main__':
 	reverse(test)
@@ -88,3 +103,5 @@ if __name__ ==' __main__':
 	remove_duplicates(list_int)
 	median(lst)	
         del_Alter_str(n,test)
+	pangram(line)
+
