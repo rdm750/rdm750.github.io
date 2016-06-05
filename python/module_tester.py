@@ -20,5 +20,11 @@ for i in xrange(1,11):
         print int_operations_Module.fib(i,0,1),',',
 int_operations_Module.pascal(10)
 
-
+test=sorted([3,11,22,1,22,2,3,33,4,77])
+test2=[5,8,1,3,7,9,2]
+t=len(test)
+print 'binary search get index of 22 in array ',test,'of length ',t
+print int_operations_Module.search(test,22,0,t)
+int_operations_Module.partition(test2)
+print '\n',int_operations_Module.pairs(test2,2)
 
