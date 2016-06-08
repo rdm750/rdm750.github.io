@@ -1,6 +1,6 @@
 '''
 string operations reverse,anti vowel,remove dpulicates
-median of a list,pangram,
+median of a list,pangram,common substring,
 
 Hackerrank.com
 written in CodeAcademy class
@@ -97,6 +97,15 @@ def pangram(line):
 	else:
 	    print 'not pangram'
 
+#--------------
+def common_substr(stra,strb):
+    stra=set(stra)
+    strb=set(strb)
+    if stra.intersection(strb):
+        print 'YES'
+    else:
+        print 'NO'
+
 if __name__ ==' __main__':
 	reverse(test)
 	anti_vowel(test)
@@ -104,4 +113,4 @@ if __name__ ==' __main__':
 	median(lst)	
         del_Alter_str(n,test)
 	pangram(line)
-
+	common_subtr(stra,strb)
