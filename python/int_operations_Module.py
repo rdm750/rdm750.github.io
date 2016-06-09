@@ -4,6 +4,8 @@ max,remove duplicates,factorial,combinations,
 fibonacci,pascal triangle,binary search sorted array,
 return integer pairs matching a difference from an array
 quicksort(lomato partition scheme implement)
+bitflip
+
 rohit malgaonkar
 
 '''
@@ -130,6 +132,11 @@ def pairs(a,k):
 
     return answer
 
+#return 32 bit integer bit flipped xor by all 1s to flip the bits. 1^1=0, 0^1=1
+
+def bitflip(n):
+    return n^((1<<32)-1)
+
 if __name__ == '__main__':
 	max(lstnum)
         remov_dupl(lstnum)
@@ -142,3 +149,5 @@ if __name__ == '__main__':
         pivot_start_partition(ar)
 	pairs(a,k)
 	quicksort(ar,lo,hi)
+	bitflip(n)
+

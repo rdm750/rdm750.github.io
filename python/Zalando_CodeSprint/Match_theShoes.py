@@ -20,5 +20,6 @@ for i in xrange(N):
     else:
         has[data]=1
 has = sorted(has, key=has.__getitem__,reverse=True)
+#alternate using lambda has = OrderedDict(sorted(has.items(), key= lambda x:x[1],reverse=True)).keys()
 for k in xrange(K):
     print has[k]
