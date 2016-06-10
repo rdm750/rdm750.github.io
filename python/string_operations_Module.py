@@ -1,11 +1,16 @@
 '''
 string operations reverse,anti vowel,remove dpulicates
 median of a list,pangram,common substring,
+top3 most common in a word,
 
-Hackerrank.com
-written in CodeAcademy class
+Hackerrank.com,written in CodeAcademy class,
+
 Rohit Malgaonkar
+
 '''
+from collections import Counter
+from collections import OrderedDict
+
 
 def reverse(text):
     w=[]
@@ -106,6 +111,23 @@ def common_substr(stra,strb):
     else:
         print 'NO'
 
+#---
+'''
+from collections import OrderedDic
+from collections import Counter
+from collections import defaultdict
+d = defaultdict(list)
+d['python'].append("awesome")
+'''
+def Most_Common(stra):
+	a=Counter(stra)
+	a=OrderedDict(sorted(a.items(),key= lambda x: (-x[1],x[0])))
+	c=0
+	for k,v in a.iteritems():
+	    if c<3:
+	        print k,v
+	        c+=1
+
 if __name__ ==' __main__':
 	reverse(test)
 	anti_vowel(test)
@@ -114,3 +136,5 @@ if __name__ ==' __main__':
         del_Alter_str(n,test)
 	pangram(line)
 	common_subtr(stra,strb)
+	Most_Common(stra)
+
