@@ -59,6 +59,7 @@ def pascal(r):
 				print comb(k-1,c-1),
 		print '\n',
 
+#binary search
 def search(arr,key,mind,maxd):
 	if maxd < mind:
 		return -1
