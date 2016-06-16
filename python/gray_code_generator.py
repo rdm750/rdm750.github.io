@@ -13,5 +13,5 @@ def graycode(n):
 		return nbit
 
 for i in xrange(1,7):
-	print graycode(i)
+	print map(int,graycode(i))
 
