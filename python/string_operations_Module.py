@@ -1,7 +1,8 @@
 '''
 string operations reverse,anti vowel,remove dpulicates
 median of a list,pangram,common substring,
-top3 most common in a word,
+top3 most common in a word,operations to make a palindrome string,
+
 
 Hackerrank.com,written in CodeAcademy class,
 
@@ -128,6 +129,12 @@ def Most_Common(stra):
 	        print k,v
 	        c+=1
 
+def PalinOper(word):
+    res=0    
+    for k in xrange(len(word)/2):
+        res+=abs(ord(word[k])-ord(word[-(k+1)]))
+    return res
+
 if __name__ ==' __main__':
 	reverse(test)
 	anti_vowel(test)
@@ -137,4 +144,5 @@ if __name__ ==' __main__':
 	pangram(line)
 	common_subtr(stra,strb)
 	Most_Common(stra)
+        PalinOper(word)
 

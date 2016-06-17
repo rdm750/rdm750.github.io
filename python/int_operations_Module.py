@@ -4,7 +4,7 @@ max,remove duplicates,factorial,combinations,
 fibonacci,pascal triangle,binary search sorted array,
 return integer pairs matching a difference from an array
 quicksort(lomato partition scheme implement)
-bitflip
+bitflip,insertion sort,
 
 rohit malgaonkar
 
