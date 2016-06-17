@@ -2,6 +2,7 @@ import palindrome
 import unique_substrings
 import string_operations_Module
 import int_operations_Module
+import int_operations_Module as IntOp
 
 palindrome.palindromes(100,2000),'\n'
 print unique_substrings.uniq_substring('ababaacabbc'),'\n'
@@ -31,4 +32,7 @@ int_operations_Module.quicksort(test2,0,len(test2)-1)
 string_operations_Module.pangram('AAABBB My name is Rohit Malgaonkar')
 string_operations_Module.common_substr('Hello','World')
 string_operations_Module.Most_Common('Rohit Malgaonkar')
+print IntOp.insertionSort([1,4,3,5,6,2])
+
+
 

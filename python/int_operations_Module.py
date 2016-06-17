@@ -118,6 +118,24 @@ def partition(A,lo,hi):
 
     return i
 
+# insertion sort
+def insertionSort(arr):    
+    for i in xrange(1,len(arr)):
+        j=i
+        
+        while (j >0 and arr[j-1]>arr[j]):
+            arr[j]^=arr[j-1]  
+            arr[j-1]^=arr[j]
+            arr[j]^=arr[j-1] 
+            j-=1
+        print ' '.join(map(str,arr))    
+   
+
+
+
+
+
+
 def pairs(a,k):
     #a contains array of numbers and k is the value of difference
     answer = 0
@@ -151,4 +169,5 @@ if __name__ == '__main__':
 	pairs(a,k)
 	quicksort(ar,lo,hi)
 	bitflip(n)
+        insertionSort(ar)
 
