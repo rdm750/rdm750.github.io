@@ -35,5 +35,7 @@ string_operations_Module.common_substr('Hello','World')
 string_operations_Module.Most_Common('Rohit Malgaonkar')
 IntOp.insertionSort([1,4,3,5,6,2])
 print StrOp.PalinOper('abcd')
+print '*'*10
+print IntOp.is_prime(97)
 
 

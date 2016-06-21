@@ -9,6 +9,17 @@ bitflip,insertion sort,
 rohit malgaonkar
 
 '''
+
+def is_prime(x):
+    if x<2:
+        return False
+    for n in range(2,x):
+        if x%n==0:
+            return False
+
+    else:
+        return True
+
 def max(lstnum):
 	k=int(lstnum[0])
 	for t in lstnum:
