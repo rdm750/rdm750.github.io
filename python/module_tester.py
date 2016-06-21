@@ -37,5 +37,6 @@ IntOp.insertionSort([1,4,3,5,6,2])
 print StrOp.PalinOper('abcd')
 print '*'*10
 print IntOp.is_prime(97)
+print IntOp.prime_factors(100)
 
 

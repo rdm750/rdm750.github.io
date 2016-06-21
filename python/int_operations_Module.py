@@ -9,6 +9,7 @@ bitflip,insertion sort,
 rohit malgaonkar
 
 '''
+from math import *
 
 def is_prime(x):
     if x<2:
@@ -19,6 +20,17 @@ def is_prime(x):
 
     else:
         return True
+
+def prime_factors(n):
+    factors=set()
+    for i in xrange(2, int(sqrt(n)) + 1):
+        while n % i == 0:
+            factors.add(i)
+            n /= i
+    if n != 1:
+        factors.add(n)
+    return factors
+
 
 def max(lstnum):
 	k=int(lstnum[0])
