@@ -15,7 +15,7 @@ sum,i=1 i=n A1,i
 Calculate and print the maximum total value of  for a given tree,T .
 
 
-passed all test cases! (python solution)
+passed all test cases on hackerrank (python solution)
 max score on dfs: 80/80 bfs:56/80 djikstra:48/80
 applied iterative (non-recursive) dfs on the graph (passes all tests, 80/80) applied bfs on the graph (timeouts 35-48 tests,passes 41 &42. score: 56/80) applied djikstra on the graph (timeouts 33-47 tests,runtime error on last 48th test. score: 48/80)
 solved after contest 101 hack June 2016
