@@ -1,3 +1,6 @@
+input {
+    font-family: Verdana, Arial, Sans-Serif;
+}
 div {
     height: 60px;
     width: 100px;

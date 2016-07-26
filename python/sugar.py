@@ -50,8 +50,9 @@ query(contact_query)
 
 print '*'*10
 #query(accounts_query)
-print list_of_fields
+#print list_of_fields
 
+'''
 with codecs.open("Contact_fields_template.csv", "w", encoding='utf8') as out:
     out.write(' '.join(list_of_fields))
 
@@ -88,6 +89,7 @@ f.close()
 	    	
 print [k for k in update_list]
 '''
-    for email, (first_name, last_name) in emails.items():
-        out.write("%s,%s,%s\n" % (email, first_name, last_name))
+#    for email, (first_name, last_name) in emails.items():
+ #       out.write("%s,%s,%s\n" % (email, first_name, last_name))
+'''
 '''
