@@ -1,3 +1,6 @@
+.active {
+    background-color:#556677;
+}
 
 #navigation {
     display: block;
