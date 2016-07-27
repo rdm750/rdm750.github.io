@@ -13,6 +13,7 @@
     border:1px solid #ccc;
     margin-top:10px;
 
+
 }
 
 /* hidden fixed navigation */
@@ -89,8 +90,8 @@
 input {
     font-family: Verdana, Arial, Sans-Serif;
 }
-div {
-    height: 60px;
+a {
+    height: 40px;
     width: 100px;
     border-radius: 5px;
     background-color: #69D2E7;
