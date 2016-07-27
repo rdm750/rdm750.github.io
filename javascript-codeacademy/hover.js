@@ -1,6 +1,6 @@
 dy(function(){
 
-  $('div, #fixedbar a').hover(
+  $('#navigation, #fixedbar a').hover(
     function(){
     $(this).addClass('active');
     },
