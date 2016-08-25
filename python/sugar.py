@@ -46,50 +46,5 @@ if len(sys.argv)>4:
 
 
 query(contact_query)
-#query(accounts_quer)
 
 print '*'*10
-#query(accounts_query)
-#print list_of_fields
-
-'''
-with codecs.open("Contact_fields_template.csv", "w", encoding='utf8') as out:
-    out.write(' '.join(list_of_fields))
-
-columns = defaultdict(list)
-
-with open('Contact_fields_template_Mod.csv') as f:
-     reader = csv.DictReader(f)
-     for row in reader:
-         for (k,v) in row.items():
-             columns[k].append(v)
-
-print '*'*10
-#print (columns['first_name'])
-f.close()
-
-f=open('Contact_fields_template_Mod.csv','r')
-k=0
-update_list=[]
-for line in f:
-    test=line.split(',')
-    if k==0:
-        header=test 
-    s=0
-    if ''.join(map(str,test))!=''.join(map(str,header)):
-        print '*'*30 
-        for t in test: 
-            if t!=',' and t!='' and t not in header:
-                print t,s,header[s]
-		update_list.append(tuple([header[s],t]))
-            s+=1
-    k+=1
-
-f.close()
-	    	
-print [k for k in update_list]
-'''
-#    for email, (first_name, last_name) in emails.items():
- #       out.write("%s,%s,%s\n" % (email, first_name, last_name))
-'''
-'''
