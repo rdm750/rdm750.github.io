@@ -16,7 +16,8 @@ sugar.py username password firstname \n or sugar.py username password firstname 
 # Connect
 url = "http://198.12.88.203/service/v4/rest.php"
 #session = sugarcrm.Session(url,sys.argv[1],sys.argv[2])
-session = sugarcrm.Session(url,'admin','beautyman')
+username,password = [row['1'] for row in csv.DictReader(file('/Users/medhamalgaonkar/Desktop/rohit/Database_Website_Volunteer/User_Pass.csv','rU'))]
+session = sugarcrm.Session(url,username,password)
 print banner
 #s = csv.writer(open('contacts_ID_fields_Dump.csv','wb'))
 #s.writerow(['ID','FIRST','LAST'])
@@ -72,4 +73,7 @@ for row in s:
 
 #accounts_query=modules[Accounts](first_name=str(sys.argv[3]))
 print '*'*10
+
+#print row[0]
+
 
