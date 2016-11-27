@@ -1,7 +1,5 @@
 import sys
-sys.path.append('/modules')
-
-print '\n'.join(sys.path)
+sys.path.append('..')
 
 import palindrome
 import unique_substrings
@@ -48,7 +46,7 @@ print IntOp.prime_factors(100)
 lista=[random.randint(1,100) for i in xrange(10)]
 
 print 'merge sort'
-print '\n'.join(dir(IntOp))
+#print '\n'.join(dir(IntOp))
 
 print IntOp.mergesort(lista)
 
