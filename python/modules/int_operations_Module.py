@@ -1,15 +1,21 @@
 '''
 int operations module
 max,remove duplicates,factorial,combinations,
-fibonacci,pascal triangle,binary search sorted array,
+fibonacci,pascal triangle,
+
+binary search sorted array,
 return integer pairs matching a difference from an array
+
 quicksort(lomato partition scheme implement)
-bitflip,insertion sort,
+insertion sort,mergesort
+
+bitflip
 
 rohit malgaonkar
 
 '''
 from math import *
+
 
 def is_prime(x):
     if x<2:
@@ -155,9 +161,26 @@ def insertionSort(arr):
    
 
 
+def mergesort(arr):
+	#spilt recursively into 2 halves until size of 1 and send to sorting function)
+	if len(arr)<=1:
+		return arr
+	mid = len(arr)/2
+	left  = mergesort(arr[:mid])
+	right =	mergesort(arr[mid:])
+
+	return merge_mergesort(left,right)
 
 
-
+def merge_mergesort(left,right):
+	if len(left)==0:
+		return right
+	if len(right)==0:
+		return left
+	if left[0]<right[0]:
+		return [left[0]]+merge_mergesort(left[1:],right)
+	return [right[0]]+merge_mergesort(left,right[1:])
+			
 
 def pairs(a,k):
     #a contains array of numbers and k is the value of difference
@@ -180,17 +203,19 @@ def bitflip(n):
     return n^((1<<32)-1)
 
 if __name__ == '__main__':
-	max(lstnum)
-        remov_dupl(lstnum)
-	fibonacci(n)
-        fib(n,a,b)
-        fact(k)
-	comb(n,r)
-	pascal(r)
-        search(arr,key,min,max)
-        pivot_start_partition(ar)
-	pairs(a,k)
-	quicksort(ar,lo,hi)
-	bitflip(n)
-        insertionSort(ar)
+    max(lstnum)
+    remov_dupl(lstnum)
+    fibonacci(n)
+    fib(n,a,b)
+    fact(k)
+    comb(n,r)
+    pascal(r)
+    search(arr,key,min,max)
+    pivot_start_partition(ar)
+    pairs(a,k)
+    quicksort(ar,lo,hi)
+    bitflip(n)
+    insertionSort(ar)
+    mergesort(arr)
 
+    

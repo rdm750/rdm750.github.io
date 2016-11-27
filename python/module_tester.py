@@ -4,6 +4,7 @@ import string_operations_Module
 import string_operations_Module as StrOp
 import int_operations_Module
 import int_operations_Module as IntOp
+import random
 
 palindrome.palindromes(100,2000),'\n'
 print unique_substrings.uniq_substring('ababaacabbc'),'\n'
@@ -39,4 +40,10 @@ print '*'*10
 print IntOp.is_prime(97)
 print IntOp.prime_factors(100)
 
+lista=[random.randint(1,100) for i in xrange(10)]
+
+print 'merge sort'
+print '\n'.join(dir(IntOp))
+
+print IntOp.mergesort(lista)
 
