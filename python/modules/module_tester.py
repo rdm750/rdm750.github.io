@@ -50,3 +50,10 @@ print 'merge sort'
 
 print IntOp.mergesort(lista)
 
+test=[random.randint(1,100) for i in xrange(10)]
+
+print 'divide & conquer maxmin \n',test
+
+print IntOp.maxmin(test,0,len(test)-1),max(test),min(test)
+print (IntOp.maxmin(test,0,len(test)-1))==(max(test),min(test))
+

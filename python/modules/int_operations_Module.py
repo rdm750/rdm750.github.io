@@ -3,7 +3,7 @@ int operations module
 max,remove duplicates,factorial,combinations,
 fibonacci,pascal triangle,
 
-binary search sorted array,
+binary search sorted array,divide conquer maxmin finder
 return integer pairs matching a difference from an array
 
 quicksort(lomato partition scheme implement)
@@ -100,6 +100,35 @@ def search(arr,key,mind,maxd):
 			return search(arr,key,index+1,maxd)
 		else:
 			return index
+
+Max,Min = None,None
+
+#divide and conquer for max min finder in array
+
+def maxmin(arr,lo,hi):
+	if lo==hi:
+		Max,Min=arr[lo],arr[hi]
+		return Max,Min
+	elif hi==lo+1:
+		if arr[hi]>arr[lo]:
+			Max,Min=arr[hi],arr[lo]
+		else:
+			Max,Min=arr[lo],arr[hi]
+		return Max,Min
+	m=(lo+hi)/2
+	maxl,minl=maxmin(arr,lo,m)
+	maxr,minr=maxmin(arr,m+1,hi)
+	if minl < minr:
+		Min=minl
+	else:
+		Min=minr
+	if maxl<maxr:
+		Max=maxr
+	else:
+		Max=maxl
+	return Max,Min
+
+
 #recursion quicksort partition
 def pivot_start_partition(ar):
     if len(ar)>1:
@@ -217,5 +246,6 @@ if __name__ == '__main__':
     bitflip(n)
     insertionSort(ar)
     mergesort(arr)
-
+    maxmin(arr,lo,hi)
+	
     
