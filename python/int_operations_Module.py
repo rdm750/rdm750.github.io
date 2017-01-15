@@ -17,7 +17,7 @@ def bubblesort(arra):
 	swapped=True
 	while(swapped==True):
 		swapped = False
-		for i in xrange(1,n-1):
+		for i in xrange(1,n):
 			if arra[i-1]>arra[i]:
 				x=arra[i-1]
 				arra[i-1]=arra[i]

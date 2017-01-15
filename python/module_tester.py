@@ -47,15 +47,16 @@ print IntOp.prime_factors(100)
 
 lista=[random.randint(1,100) for i in xrange(10)]
 
+print 'merge sort',lista
 
-print 'merge sort'
 #print '\n'.join(dir(IntOp))
 
-print IntOp.mergesort(lista)
+#print IntOp.mergesort(lista)
 
-print 'bubblesort'
+print 'bubblesort',lista
 
 print IntOp.bubblesort(lista)
+
 
 
 
